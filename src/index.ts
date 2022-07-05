@@ -14,6 +14,12 @@ const app = express();
 app.use(helmet());
 
 app.get("/:projection/:version", async (req: Request, res: Response) => {
+  const clientId = req.query.clientId;
+  if (!clientId) {
+    res.status(400).json(`A clientId is required`);
+    return;
+  }
+
   const key = `${req.params.projection}_${req.params.version}`;
   const projection = projections.get(key);
   if (!projection) {
@@ -30,9 +36,7 @@ app.get("/:projection/:version", async (req: Request, res: Response) => {
 
   const temporalData = projection.get(effectiveDate);
   if (!temporalData) {
-    res
-      .status(404)
-      .json(`No data for effectiveDate: ${effectiveDate.toISOString()}`);
+    res.status(404).json(`No data for effectiveDate: ${effectiveDate.toISOString()}`);
     return;
   }
   res.setHeader("max-age", 300);
