@@ -6,13 +6,14 @@ A proof of concept service for exposing Haven projections via a RESTful API
 
 ### /:projection/:version
 
-| Parameter | Type | Default | Example | Notes |
-| --------- | ---- | ------- | ------- | ----- | 
-| projection | request | | data-parks | The name of the projection module |
-| version | request | | v1 | The major version number of the projection module |
-| effectiveDate | query | now | 2021-01-01 | The effective date to use when retrieving projected data |
+| Parameter     | Type    | Default | Example    | Notes                                                    |
+| ------------- | ------- | ------- | ---------- | -------------------------------------------------------- |
+| projection    | request |         | data-parks | The name of the projection module                        |
+| version       | request |         | v1         | The major version number of the projection module        |
+| effectiveDate | query   | now     | 2021-01-01 | The effective date to use when retrieving projected data |
 
 #### Example
+
 curl http://localhost:3000/parks/v1?effectiveDate=2021-01-01
 
 ## Adding Projections
