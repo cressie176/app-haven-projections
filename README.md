@@ -1,6 +1,6 @@
 # Haven Projections Service
 
-Exposes haven projections via a RESTful API
+A proof of concept service for exposing Haven projections via a RESTful API
 
 ## API
 
