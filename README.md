@@ -1,4 +1,4 @@
-# Haven Projections RESTful API
+# Haven Projections Service
 
 Exposes haven projections via a RESTful API
 
