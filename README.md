@@ -100,4 +100,4 @@ curl -s 'http://localhost:3000/park-opening-dates/v1?effectiveDate=2021-01-01&cl
    ```sh
    npm install park-opening-dates-1.0.00@npm:park-opening-dates@1.0.0
    ```
-1. Add the projection to `src/index.ts`
+1. Add the projection to [/src/index.ts](https://github.com/cressie176/service-haven-projections/blob/main/src/index.ts#L7-L10)
