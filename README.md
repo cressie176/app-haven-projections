@@ -103,6 +103,7 @@ curl -s 'http://localhost:3000/park-opening-dates/v1?effectiveDate=2021-01-01&cl
 1. Add the projection to [/src/index.ts](https://github.com/cressie176/service-haven-projections/blob/main/src/index.ts#L7-L10)
 
 ## TypeScript Usage
+Even though you are requesting the data via an API you can still make use of the TypeScript definitions bundled with each projection module. e.g.
 
 ```ts
 import { ParkOpeningDatesType } from "data-park-opening-dates-1.0.0";
