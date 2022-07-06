@@ -26,32 +26,32 @@ curl -s 'http://localhost:3000/park-opening-dates/v1?effectiveDate=2021-01-01&cl
       "openingDates" : {
          "guests" : [
             {
-               "from" : "2020-03-11",
-               "to" : "2020-11-07"
+               "from" : "2021-03-11",
+               "to" : "2021-11-07"
             },
             {
-               "from" : "2021-03-10",
-               "to" : "2021-11-06"
+               "from" : "2022-03-10",
+               "to" : "2022-11-06"
             }
          ],
          "owners" : [
             {
-               "from" : "2020-03-11",
-               "to" : "2020-11-07"
+               "from" : "2021-03-11",
+               "to" : "2021-11-07"
             },
             {
-               "from" : "2021-03-10",
-               "to" : "2021-11-06"
+               "from" : "2022-03-10",
+               "to" : "2022-11-06"
             }
          ],
          "touring" : [
             {
-               "from" : "2020-03-11",
-               "to" : "2020-11-07"
+               "from" : "2021-03-11",
+               "to" : "2021-11-07"
             },
             {
-               "from" : "2021-03-10",
-               "to" : "2021-11-06"
+               "from" : "2022-03-10",
+               "to" : "2022-11-06"
             }
          ]
       }
@@ -61,32 +61,32 @@ curl -s 'http://localhost:3000/park-opening-dates/v1?effectiveDate=2021-01-01&cl
       "openingDates" : {
          "guests" : [
             {
-               "from" : "2020-03-11",
-               "to" : "2020-11-07"
+               "from" : "2021-03-11",
+               "to" : "2021-11-07"
             },
             {
-               "from" : "2021-03-10",
-               "to" : "2021-11-06"
+               "from" : "2022-03-10",
+               "to" : "2022-11-06"
             }
          ],
          "owners" : [
             {
-               "from" : "2020-03-11",
-               "to" : "2020-11-07"
+               "from" : "2021-03-11",
+               "to" : "2021-11-07"
             },
             {
-               "from" : "2021-03-10",
-               "to" : "2021-11-06"
+               "from" : "2022-03-10",
+               "to" : "2022-11-06"
             }
          ],
          "touring" : [
             {
-               "from" : "2020-03-11",
-               "to" : "2020-11-07"
+               "from" : "2021-03-11",
+               "to" : "2021-11-07"
             },
             {
-               "from" : "2021-03-10",
-               "to" : "2021-11-06"
+               "from" : "2022-03-10",
+               "to" : "2022-11-06"
             }
          ]
       }
@@ -98,6 +98,6 @@ curl -s 'http://localhost:3000/park-opening-dates/v1?effectiveDate=2021-01-01&cl
 
 1. Install the projection using an alias so we can support multiple API versions concurrently, e.g.
    ```sh
-   npm install park-1.0.00@npm:parks@1.0.0
+   npm install park-opening-dates-1.0.00@npm:park-opening-dates@1.0.0
    ```
 1. Add the projection to `src/index.ts`
