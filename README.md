@@ -15,7 +15,81 @@ A proof of concept service for exposing Haven projections via a RESTful API
 
 #### Example
 
-curl http://localhost:3000/parks/v1?effectiveDate=2021-01-01
+```sh
+curl -s 'http://localhost:3000/park-opening-dates/v1?effectiveDate=2021-01-01&clientId=app-cms' | json_pp
+[
+   {
+      "code" : "DC",
+      "openingDates" : {
+         "guests" : [
+            {
+               "from" : "2020-03-11",
+               "to" : "2020-11-07"
+            },
+            {
+               "from" : "2021-03-10",
+               "to" : "2021-11-06"
+            }
+         ],
+         "owners" : [
+            {
+               "from" : "2020-03-11",
+               "to" : "2020-11-07"
+            },
+            {
+               "from" : "2021-03-10",
+               "to" : "2021-11-06"
+            }
+         ],
+         "touring" : [
+            {
+               "from" : "2020-03-11",
+               "to" : "2020-11-07"
+            },
+            {
+               "from" : "2021-03-10",
+               "to" : "2021-11-06"
+            }
+         ]
+      }
+   },
+   {
+      "code" : "SX",
+      "openingDates" : {
+         "guests" : [
+            {
+               "from" : "2020-03-11",
+               "to" : "2020-11-07"
+            },
+            {
+               "from" : "2021-03-10",
+               "to" : "2021-11-06"
+            }
+         ],
+         "owners" : [
+            {
+               "from" : "2020-03-11",
+               "to" : "2020-11-07"
+            },
+            {
+               "from" : "2021-03-10",
+               "to" : "2021-11-06"
+            }
+         ],
+         "touring" : [
+            {
+               "from" : "2020-03-11",
+               "to" : "2020-11-07"
+            },
+            {
+               "from" : "2021-03-10",
+               "to" : "2021-11-06"
+            }
+         ]
+      }
+   }
+]
+```
 
 ## Adding Projections
 
