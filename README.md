@@ -17,6 +17,9 @@ A proof of concept service for exposing Haven projections via a RESTful API
 
 ```sh
 curl -s 'http://localhost:3000/park-opening-dates/v1?effectiveDate=2021-01-01&clientId=app-cms' | json_pp
+```
+
+```json
 [
    {
       "code" : "DC",
