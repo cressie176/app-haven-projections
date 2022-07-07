@@ -1,4 +1,4 @@
-import { ParkOpeningDatesType } from "data-park-opening-dates-1.0.0";
+import { ParkOpeningDatesType } from "data-park-opening-dates-v1";
 import bent from "bent";
 
 const getJSON = bent("json");

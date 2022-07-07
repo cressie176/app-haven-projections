@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "data-park-opening-dates-1.0.0": "npm:data-park-opening-dates@^1.0.0",
-    "data-parks-1.0.0": "npm:data-parks@^1.0.0",
-    "data-parks-2.0.0": "npm:data-parks@^1.0.0",
+    "data-park-opening-dates-v1": "npm:data-park-opening-dates@^1.0.0",
+    "data-parks-v1": "npm:data-parks@^1.0.0",
+    "data-parks-v2": "npm:data-parks@^1.0.0",
     "express": "^4.18.1",
     "helmet": "^5.1.0"
   },
