@@ -1,8 +1,8 @@
 import express, { Request, Response } from "express";
 import helmet from "helmet";
-import parks_v1 from "data-parks-v1/all";
-import parks_v2 from "data-parks-v2/all";
-import parkOpeningDates_v1 from "data-park-opening-dates-v1/all";
+import parks_v1 from "@cressie176/data-parks-v1/all";
+import parks_v2 from "@cressie176/data-parks-v2/all";
+import parkOpeningDates_v1 from "@cressie176/data-park-opening-dates-v1/all";
 
 const projections = new Map<string, any>();
 projections.set("parks_v1", parks_v1);
