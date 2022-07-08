@@ -98,8 +98,8 @@ curl -s 'http://localhost:3000/park-opening-dates/v1?effectiveDate=2021-01-01&cl
 
 1. Install the projection using an alias so we can support multiple API versions concurrently, e.g.
    ```sh
-   npm install data-park-opening-dates-v10@npm:data-park-opening-dates@1
-   npm install data-park-opening-dates-v20@npm:data-park-opening-dates@2
+   npm install data-park-opening-dates-v1@npm:data-park-opening-dates@1
+   npm install data-park-opening-dates-v2@npm:data-park-opening-dates@2
    ```
 1. Add the projection to [/src/index.ts](https://github.com/cressie176/service-haven-projections/blob/main/src/index.ts#L7-L10)
 
