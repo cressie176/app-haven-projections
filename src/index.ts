@@ -1,8 +1,8 @@
 import express, { Request, Response } from "express";
 import helmet from "helmet";
-import parks_v1 from "@cressie176/data-parks-v1/all";
-import parks_v2 from "@cressie176/data-parks-v2/all";
-import parkOpeningDates_v1 from "@cressie176/data-park-opening-dates-v1/all";
+import parks_v1 from "@haven/data-parks-v1/all";
+import parks_v2 from "@haven/data-parks-v2/all";
+import parkOpeningDates_v1 from "@haven/data-park-opening-dates-v1/all";
 
 const projections = new Map<string, any>();
 projections.set("parks_v1", parks_v1);
@@ -27,20 +27,20 @@ app.get("/:projection/:version", async (req: Request, res: Response) => {
     return;
   }
 
-  let effectiveDate = new Date();
-  if (req.query.effectiveDate) {
-    const timestamp = Date.parse(req.query.effectiveDate as string);
+  let date = new Date();
+  if (req.query.date) {
+    const timestamp = Date.parse(req.query.date as string);
     if (isNaN(timestamp)) return res.status(400).json("Invalid timestamp");
-    effectiveDate = new Date(timestamp);
+    date = new Date(timestamp);
   }
 
-  const temporalData = projection.get(effectiveDate);
-  if (!temporalData) {
-    res.status(404).json(`No data for effectiveDate: ${effectiveDate.toISOString()}`);
+  const projectedRecord = projection.get(date);
+  if (!projectedRecord.effectiveDate) {
+    res.status(404).json(`No data ${date.toISOString()}`);
     return;
   }
   res.setHeader("max-age", 300);
-  res.json(temporalData);
+  res.json(projectedRecord);
 });
 
 app.listen(3000, () => {
