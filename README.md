@@ -8,10 +8,10 @@ A proof of concept service for exposing Haven projections via a RESTful API
 
 | Parameter  | Type    | Required | Default | Example    | Notes                                                            |
 | ---------- | ------- | -------- | ------- | ---------- | ---------------------------------------------------------------- |
-| projection | request | Yes      |         | data-parks | The name of the projection module                                |
-| version    | request | Yes      |         | v1         | The major version number of the projection module                |
+| projection | request | Yes      |         | data-parks | The name of the projection package                               |
+| version    | request | Yes      |         | v1         | The major version number of the projection package               |
 | clientId   | query   | Yes      |         | app-cms    | A string identifying the client so we can track production usage |
-| date       | query   | No       | now     | 2021-01-01 | The effective date to use when retrieving projected data         |
+| date       | query   | No       | now     | 2021-01-01 | The date to use when retrieving projected data                   |
 
 #### Example
 
