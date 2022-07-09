@@ -39,7 +39,11 @@ app.get("/:projection/:version", async (req: Request, res: Response) => {
     res.status(404).json(`No data ${date.toISOString()}`);
     return;
   }
-  res.setHeader("max-age", 300);
+
+  console.log(projectedRecord);
+
+  const maxAge = Math.max(300, (Date.now() - projectedRecord.nextEffectiveDate.getTime()) / 1000);
+  res.setHeader("Cache-Control", `max-age=${maxAge}`);
   res.json(projectedRecord);
 });
 

@@ -11,7 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cressie176/data-parks-v2": "npm:@cressie176/data-parks@^1.0.0",
     "@haven/data-park-opening-dates-v1": "npm:@haven/data-park-opening-dates@^1.0.0",
     "@haven/data-parks-v1": "npm:@haven/data-parks@^1.0.0",
     "@haven/data-parks-v2": "npm:@haven/data-parks@^1.0.0",

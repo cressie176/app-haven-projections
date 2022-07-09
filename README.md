@@ -25,6 +25,7 @@ curl -s 'http://localhost:3000/park-opening-dates/v1?date=2021-01-01&clientId=ap
   "version": "1.0.0",
   "variant": "all",
   "effectiveDate": "2021-12-01T00:00:00.000Z",
+  "nextEffectiveDate": "2022-12-01T00:00:00.000Z",
   "data": [
     {
       "code": "DC",
